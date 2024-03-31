@@ -238,14 +238,46 @@ hr {
         width: 75%;
     }
 
-    #benefits-mental > div {
-        text-align: end;
+    #benefits-mental div {
         align-self: flex-end;
     }
+
+    #benefits-mental h3, #benefits-mental p {
+        text-align: end;
+    }
+
+   
 }
 
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    #benefits {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #benefits-physical {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 2;
+    }
+
+    #benefits-image {
+        order: 1;    
+    }
+    #benefits > * {
+        flex: 1 1 auto;
+    }
+
+    
 }
