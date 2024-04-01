@@ -94,6 +94,8 @@ header a {
 /*main*/
 main {
     /* make the main element take up any surplus space */
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
     margin-top: 47px;
 }
@@ -131,6 +133,59 @@ main {
 #photos {
     line-height: 0;
 }
+
+/* Sign Up Page */
+#signup {
+    /* background: #ffffff url("/assets/images/signup-image.webp") no-repeat 75% center / ; */
+    background-image: url("/assets/images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    /* background-image: url("/assets/images/signup-image.webp"); */
+}
+
+#signup-form {
+   
+    padding: 30px;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.6);
+    
+}
+
+#signup-form > h2 {
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
+.text-input {
+    background: transparent;
+    width: 100%;
+    height: 25px;
+    border: 1px solid white;
+    border-color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.radio_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    margin-top: 20px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    color:#fafafa;
+    background-color: #454b1b;
+    font-size: 100%;
+}
+
+
+
 
 /* footer */
 #social-networks {
